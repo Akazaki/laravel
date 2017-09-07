@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/helo', function () {
+//     return view('helo',['message' => 'Hello!']);
+// });
+
+// Route::resource('hello/', 'App\Controllers\helloController');
+Route::resource('hello', 'HelloController');
